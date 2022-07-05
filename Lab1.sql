@@ -7,7 +7,7 @@ create table Students(
 	Email nvarchar(30),
 	PRIMARY KEY(studentID),
 );
-insert Students values(1, 'Nguyen Quang An', isnull, 'an@yayoo.com'),(2, 'Nguyen Cong Vinh', 20, 'vinh@gmail.com'),(3, 'Nguyen Van Quyen', 19, 'quyen'),(4,'Pham Thanh Binh', 25, 'binh@com'),(5, 'Nguyen Van Tai Em', 30, 'taiem@sport.vn');
+insert Students values(1, 'Nguyen', isnull, 'an@yayoo.com'),(2, 'Nguyen Cong Vinh', 20, 'vinh@gmail.com'),(3, 'Nguyen Van Quyen', 19, 'quyen'),(4,'Pham Thanh Binh', 25, 'binh@com'),(5, 'Nguyen Van Tai Em', 30, 'taiem@sport.vn');
 select StudentName From Students order by studentID;
 Alter table Students
 Add constraint do_tuoi Check (Age between 15 and 50);
